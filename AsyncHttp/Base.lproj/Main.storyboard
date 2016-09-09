@@ -46,25 +46,36 @@
                                 <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pES-ep-POj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNu-uR-MO9">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pES-ep-POj">
+                                        <color key="backgroundColor" red="0.83980429290000003" green="0.83980429290000003" blue="0.83980429290000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.28290657720000001" green="0.28290657720000001" blue="0.28290657720000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.83980429290000003" green="0.83980429290000003" blue="0.83980429290000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pES-ep-POj" secondAttribute="bottom" constant="10" id="1QG-Hm-GRp"/>
+                                    <constraint firstItem="pES-ep-POj" firstAttribute="top" secondItem="NNu-uR-MO9" secondAttribute="top" constant="10" id="74N-zd-Acx"/>
+                                    <constraint firstItem="pES-ep-POj" firstAttribute="leading" secondItem="NNu-uR-MO9" secondAttribute="leading" constant="10" id="N5e-mG-6st"/>
+                                    <constraint firstAttribute="trailing" secondItem="pES-ep-POj" secondAttribute="trailing" constant="10" id="rAi-nd-hqj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Xr-eq-4xz" firstAttribute="top" secondItem="Frq-S2-18k" secondAttribute="bottom" constant="32" id="2uC-jL-SFP"/>
+                            <constraint firstAttribute="trailing" secondItem="NNu-uR-MO9" secondAttribute="trailing" id="AHy-oA-W0J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NNu-uR-MO9" secondAttribute="bottom" id="D0a-TK-xJf"/>
                             <constraint firstItem="Frq-S2-18k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="E5E-ia-DbY"/>
-                            <constraint firstItem="pES-ep-POj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OCZ-AH-5ZS"/>
+                            <constraint firstItem="NNu-uR-MO9" firstAttribute="top" secondItem="nlI-Oq-aH4" secondAttribute="bottom" constant="20" id="ON6-rN-IBP"/>
                             <constraint firstItem="nlI-Oq-aH4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pd3-qj-jPr"/>
-                            <constraint firstItem="pES-ep-POj" firstAttribute="top" secondItem="nlI-Oq-aH4" secondAttribute="bottom" constant="32" id="RG5-zx-Tr9"/>
                             <constraint firstItem="Frq-S2-18k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S9d-x5-Iyw"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pES-ep-POj" secondAttribute="bottom" constant="20" id="ciU-kL-FoB"/>
                             <constraint firstItem="nlI-Oq-aH4" firstAttribute="top" secondItem="5Xr-eq-4xz" secondAttribute="bottom" constant="32" id="jWb-rp-fLN"/>
                             <constraint firstItem="5Xr-eq-4xz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="meV-iV-OAD"/>
-                            <constraint firstItem="pES-ep-POj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ovz-RU-KL5"/>
+                            <constraint firstItem="NNu-uR-MO9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rxD-Ui-5xL"/>
                             <constraint firstItem="Frq-S2-18k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="usn-4H-Qtj"/>
                         </constraints>
                     </view>
